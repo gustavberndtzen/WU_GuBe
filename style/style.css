@@ -1,158 +1,290 @@
-/*16px*/
 /*Global*/
 body{
-    background-color: white;
+    font-family: 'Roboto Slab', serif;
+    background-color: #e2e2e2;
     margin: auto;
     text-align: center;
 }
 
-
+/*Gör så att allt trycks ihop med 10% på vänster och höger sida*/
 .container{
-    width: 80%;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.heading{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    
+}
+
+.S_heading{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 26px;
 }
 
 
-.boxShadows{
-    box-shadow: 0px 5px 30px 4px black;
-}
+
+
+
+/*///////////////////*/
 
 
 /*Navbar*/
-.current{
-}
-
-
 header{
-    height: 100px;
-    background-color: rgb(31, 31, 31);
+    height: 80px;
+    background-color: #1f1f1f;
     z-index: 1000;
 }
+/*Ändrar färgen på den länk du är på.*/
+.navlinks .current a{
+    border-color: orange;
+}
 
+.navlinks{
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+}
 
-/*
-nav{
-}*/
+/*remove!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#test{
+    margin-right: 3em;
+}
+/*------*/
 
+/*Padding gör så att alla borders passar perfekt inne i headern*/
+.navlinks li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 4px solid;
+}
 
+.navlinks li a:hover{
+   border-color: orange;
+}
+
+.navlinks li{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/*Meny för mobila enheter*/
+#menu{
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 32px 0px;
+    cursor: pointer;
+    display: none;   
+    color: white;
+}
+
+/*h1 är loggan*/
+/*Ändrar så att den inte har någon margin så den inte är ivägen för annat och flytter på divs osv.*/
 h1 a{
     font-size: 2.25em;    
     margin: 0;
     text-decoration: none;
     color: white;
 }
-
-.logo{
-    padding-top: 32px;
-    padding-bottom: 32px;
+/*Den här classen centrerar loggan med padding*/
+#logo{
+    padding-top: 22px;
+    padding-bottom: 22px;
     margin-left: 2%;
     float: left;
     list-style-type: none;
 }
 
-ul.navlinks{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    float: right;
-}
+/*///////////////////*/
 
-ul.navlinks li a{
-    color: white;
-    display: block;
-    text-decoration: none;
-    padding-top: 41px;
-    padding-bottom: 41px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left: 5px;
-    border: 1px solid;
-}
+/* Jag använderm mig utav position: relative; för att få bilden att anpassa sig efter texten som ska vara på bilden */
 
-ul.navlinks li a:hover{
-    display: block;
-    text-decoration: none;
-    padding-top: 41px;
-    padding-bottom: 41px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border: 1px orange solid;
-    box-shadow: 0px 0px 5px 1px black ;
-}
-
-
-ul.navlinks li{
-    position: relative;
-    display: inline-block;
-    margin-right: 50px;
-}
-
+/*Front view är första bilden som ska introducera en till hemsidan*/
 .frontView{
     position: relative;
-    width: 100%;
+
 }
 
-h2{
+/*Jag får ner texten genom att ge den en absolute position och sedan ger den top 12% som trycker ner den med 12% från headern. Text-align för att centrera texten.*/
+h2#frontHeading{
     position: absolute;
     width: 100%;
-    top: 12%;
-    font-size: 58px;
+    top: 25%;
+    font-size: 4em;
     color: white;
-    background:  rgba(31, 31, 31, 0.9);;
+    background: rgba(31, 31, 31, 0.9);;
     text-align: center;
 }
 
 #FrontImg{
     width: 100%;
-    height: 100%;
-/*    border: 1px solid red;*/
- 
 }
 
-
-
-.FrontPosts{
-/*    border: 1px green solid;*/
+#frontHeading{
+    top: 35%;
 }
 
-.postNum1{
-    text-align: center;
+.blogPost{
+    margin: 5%;
+    padding-top: 10px;
     padding-bottom: 50px;
-    /*border: 1px blue solid;*/
+    background: white;
+}
+
+.PostImage{
+    width: 80%;
 }
 
 p.FrontPostText{
-    width: 80%;
     text-align: center;
-    display: inline-block;
-}
+    margin-left: 10%;
+    margin-right: 10%;
 
+}
 
 
 
 
 
 /*About*/
-
 #AboutHead{
-    top: 18%;
-    position: absolute;
-    width: 100%;
     font-size: 38px;
-    text-align: center;
+    background-color: white;
 }
 
 hr{
-    margin-top: 10%;
     margin-right: 10%;
     margin-left: 10%;
-    height: 2px;
-    width: 100%;
-    background-color: black;
+    height: 2px;    
+    text-align: center;
+}
+
+#AboutPic{
+    width:370px;
+    height:480px;
+    margin-left: 50px;
+    position: relative;
+    float: right;
+}
+
+.AboutDiv{
+    margin: 5%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background: white;
+    
+}
+
+p.par{
+    margin-left: 5%;
+    width: 50%;
+    height: 500px;
+/*    border: 1px red solid;*/
+}
+
+.ContentText{
+    line-height: 1.25em;
 }
 
 
 
 
 
+footer{
+    position: absolute;
+    height: 125px;
+    width: 100%;
+    background-color: #1f1f1f;
+    text-align: center;
+    text-decoration: none;
+}
 
+/*Gör alla så att alla länkar i footerinf inte har någon underline eller den orginala lila färgen när länken har blivit visited(besökt)*/
+.footerinf a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Gör att varje columne tar 1/3 av sidan*/
+.column{
+    width: 33.3%;
+    margin-top: 25px;
+    float: left;
+    text-decoration: none;
+    color: white;
+    line-height: 1.25em;
+}
+
+
+.fa {
+    padding: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+    font: 50px;
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 850px){
+    
+    nav{
+        display: none;
+    }
+    
+    #menu{
+        display: block
+    }
+    
+    .navlinks li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    border: 1px solid;
+}
+        
+    .blogPost{
+        margin-top: 10%;
+    }
+    
+}
+
+@media only screen and (max-width: 740){
+    
+    h2#frontHeading{
+        font-size: 36px;
+        
+    }
+    
+}

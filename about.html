@@ -4,31 +4,61 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/HTML5Reset.css">
-    <link rel="stylesheet" type="text/css" href="style/style.css">     
-    <title>AG Travels | About</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css"> 
+    <!--Länkar iconerna till facebook och twitter-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <!--<script src="http://code.jquery.com/jquery-1.11.3.js"></script>-->
 </head>
 
+   
+    
     <header>
-        <nav>
-            <div class="logo">
-                <h1><a href="#">AG Travel's</a></h1></div>        
-                    <ul class="navlinks">
-                        <li class="links"><a href=index.html>Home</a></li>
-                        <li class="links"><a href=#>Posts</a></li>
-                        <li class="links"><a href=#>Photos</a></li>
-                        <li class="links current"><a href=#>About</a></li>
-                    </ul>
-        </nav>
+        <div id="logo">
+            <h1><a href="index.html">AG Travel's</a></h1>
+        </div>  
+            <nav>
+                <ul class="navlinks">
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href=blogPosts.html>Posts</a></li>
+                    <li><a href=#>Photos</a></li>
+                    <li class="current"><a href=about.html>About</a></li>
+                </ul>
+            </nav>
+         <div id="menu">Menu</div>
     </header>
     
-<body> 
     
+    
+    
+<body> 
+    <div class="AboutDiv">
     <div class="container">
-        <h3 id="AboutHead">About</h3>
-        <hr class="AboutLine">
+        <h3 id="AboutHead">About<hr class="AboutLine"></h3>
+    
+        
+            <h3 class="S_heading">This is Alex</h3>
+            <img id="AboutPic" src="https://timedotcom.files.wordpress.com/2017/04/time-100-2017-ryan-reynolds.jpg?w=560">
+            <p class="par ContentText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed diam eget sem dapibus hendrerit. Sed vehicula elit vel convallis ultricies. Integer vehicula ligula volutpat pellentesque aliquam. Quisque ullamcorper tellus non tortor dignissim, ac euismod urna consectetur. Etiam eu purus erat. Pellentesque malesuada, diam sit amet fringilla lobortis, mauris magna sollicitudin velit, a vulputate augue odio sit amet tortor. Suspendisse pretium consequat convallis. Proin suscipit lobortis odio. Maecenas malesuada nisi ut mollis commodo. Duis vel mi nec felis faucibus sagittis. Quisque faucibus scelerisque orci, non sagittis enim efficitur vel. Proin leo neque, euismod et pellentesque a, fermentum in nisi.</p>
+
+        </div>
+    
     </div>
     
     
-<footer></footer>    
+
+<footer>
+        <div class="footerinf">
+            <p class="column"><a href="index.html">Home</a><br><a href="blogPosts.html">Posts</a><br>Photos<br><a href="about.html">About Us</a></p>
+            <p class="column">Contact Us<br>@example.com</p>
+            
+            <div class="column">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+</footer> 
+    
 </body>
 </html>
