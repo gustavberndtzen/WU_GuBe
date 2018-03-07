@@ -1,16 +1,11 @@
-/*Global*/
+/******************************************/
+/******************Global******************/
+/******************************************/
+
 body{
     font-family: 'Roboto Slab', serif;
-    background-color: #e2e2e2;
+    background-color: #282828;
     margin: auto;
-    text-align: center;
-}
-
-/*Gör så att allt trycks ihop med 10% på vänster och höger sida*/
-.container{
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
     text-align: center;
 }
 
@@ -18,7 +13,6 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 36px;
-    
 }
 
 .S_heading{
@@ -27,38 +21,76 @@ body{
     font-size: 26px;
 }
 
+.S_textHeading{
+    font-size: 18px;
+    margin-top: 25px
+}
 
+.ContentDiv{
+    margin: auto;
+    margin-bottom: 3%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    width: 80%;
+    overflow: hidden;
+    background-color: white;
+}
+ 
+.textBox{  
+    margin: auto;
+    width: 90%;
+    border: 1px #282828 solid;
+}
 
+.ContentText{
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 90%;
+    line-height: 1.25em;
+}
 
+hr{
+    margin-right: 10%;
+    margin-left: 10%;
+    border-width: 3px;
+    text-align: center;
+    border-color: #1f1f1f;
+}
 
-/*///////////////////*/
+/******************************************/
+/******************Header******************/
+/******************************************/
 
-
-/*Navbar*/
 header{
     height: 80px;
     background-color: #1f1f1f;
-    z-index: 1000;
-}
-/*Ändrar färgen på den länk du är på.*/
-.navlinks .current a{
-    border-color: orange;
 }
 
-.navlinks{
+/******************************************/
+/******************Navbar******************/
+/******************************************/
+
+nav{
     list-style-type: none;
     overflow: hidden;
     float: right;
+    overflow: hidden;
 }
 
-/*remove!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-#test{
-    margin-right: 3em;
-}
-/*------*/
 
-/*Padding gör så att alla borders passar perfekt inne i headern*/
-.navlinks li a{
+
+
+
+
+nav li{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li a{
     color: white;
     display: block;
     text-decoration: none;
@@ -69,14 +101,12 @@ header{
     border: 4px solid;
 }
 
-.navlinks li a:hover{
-   border-color: orange;
+nav .current a{
+    border-color: orange;
 }
 
-.navlinks li{
-    position: relative;
-    display: inline-block;
-    margin-right: 10px;
+nav li a:hover{
+   border-color: orange;
 }
 
 /*Meny för mobila enheter*/
@@ -93,38 +123,36 @@ header{
 /*h1 är loggan*/
 /*Ändrar så att den inte har någon margin så den inte är ivägen för annat och flytter på divs osv.*/
 h1 a{
-    font-size: 2.25em;    
     margin: 0;
+    font-size: 2.25em;    
     text-decoration: none;
     color: white;
 }
+
 /*Den här classen centrerar loggan med padding*/
 #logo{
     padding-top: 22px;
     padding-bottom: 22px;
     margin-left: 2%;
-    float: left;
     list-style-type: none;
+    float: left;
 }
 
-/*///////////////////*/
-
-/* Jag använderm mig utav position: relative; för att få bilden att anpassa sig efter texten som ska vara på bilden */
-
-/*Front view är första bilden som ska introducera en till hemsidan*/
-.frontView{
-    position: relative;
-
-}
 
 /*Jag får ner texten genom att ge den en absolute position och sedan ger den top 12% som trycker ner den med 12% från headern. Text-align för att centrera texten.*/
-h2#frontHeading{
+
+
+/******************************************/
+/***************Första Sidan***************/
+/******************************************/
+
+h2{
     position: absolute;
     width: 100%;
     top: 25%;
     font-size: 4em;
     color: white;
-    background: rgba(31, 31, 31, 0.9);;
+    background: rgba(31, 31, 31, 0.9);
     text-align: center;
 }
 
@@ -132,105 +160,108 @@ h2#frontHeading{
     width: 100%;
 }
 
-#frontHeading{
-    top: 35%;
-}
 
-.blogPost{
-    margin: 5%;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    background: white;
-}
+/******************************************/
+/*****************Blogposts****************/
+/******************************************/
 
-.PostImage{
-    width: 80%;
-}
-
-p.FrontPostText{
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-
-}
-
-
-
-
-
-/*About*/
-#AboutHead{
-    font-size: 38px;
+.blogPostFront{
+    margin: 5% 15% 5% 15%;
+    padding-top: 5px;
+    padding-bottom: 25px;
     background-color: white;
 }
 
-hr{
-    margin-right: 10%;
+.blogPost img{
+    width: 100%;
+    height: 100%;
+}
+
+.blogPost:hover{
+    border-color: rgb(31, 31, 31);
+}
+
+.blogPost{
+    float: left;
+    width: 26%;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    border: 1px solid grey;
+}
+
+.blogPosts{
+    margin: auto;
     margin-left: 10%;
-    height: 2px;    
+    margin-right: 10%;
+    width: 100%;
+}
+
+.desc{
+    padding: 10px;
     text-align: center;
 }
 
+.PostImage{
+    width: 90%;
+}
+
+
+/******************************************/
+/******************About******************/
+/******************************************/
+
+.h3Header{
+    font-size: 38px;
+}
+
+.AboutDiv{
+    width: 60%;
+}
+
 #AboutPic{
+    margin-left: 50px;
     width:370px;
     height:480px;
-    margin-left: 50px;
     position: relative;
     float: right;
 }
 
-.AboutDiv{
-    margin: 5%;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    background: white;
-    
-}
-
-p.par{
-    margin-left: 5%;
-    width: 50%;
-    height: 500px;
-/*    border: 1px red solid;*/
-}
-
-.ContentText{
-    line-height: 1.25em;
+#AboutLi{
+    float: right;
 }
 
 
-
-
+/******************************************/
+/******************Footer******************/
+/******************************************/
 
 footer{
-    position: absolute;
     height: 125px;
     width: 100%;
     background-color: #1f1f1f;
-    text-align: center;
-    text-decoration: none;
 }
 
 /*Gör alla så att alla länkar i footerinf inte har någon underline eller den orginala lila färgen när länken har blivit visited(besökt)*/
-.footerinf a{
+footer a{
     text-decoration: none;
     color: white;
 }
 
-/*Gör att varje columne tar 1/3 av sidan*/
+/*Gör att varje column tar en tredjedel av sidan*/
 .column{
     width: 33.3%;
     margin-top: 25px;
-    float: left;
     text-decoration: none;
     color: white;
     line-height: 1.25em;
+    float: left;
 }
 
-
+/*Sociala Medier Symboler*/
 .fa {
-    padding: 25px;
     text-align: center;
+    padding: 25px;
     border-radius: 50%;
 }
 
@@ -239,7 +270,6 @@ footer{
 }
 
 .fa-facebook {
-    font: 50px;
     background: #3B5998;
     color: white;
 }
@@ -254,37 +284,104 @@ footer{
     color: white;
 }
 
+/******************************************/
+/**************Dropdown Meny***************/
+/******************************************/
 
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdownLinks {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 1000; 
+}
+
+.dropdownLinks a {
+    color: black;
+    padding: 16px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdownLinks a:hover {
+    background-color: orange;
+}
+
+.dropdown:hover .dropdownLinks {
+    display: block;
+}
+
+
+
+/******************************************/
+/**************Media Queries***************/
+/******************************************/
 
 @media only screen and (max-width: 850px){
-    
+    /*Gömmer nav knapparna för mobila enheter*/
     nav{
         display: none;
     }
-    
+    /*Ändrar så att menyn syns istället för knapparna*/
     #menu{
-        display: block
+        display: block;
     }
     
-    .navlinks li a{
-    color: white;
+    .nav li a{
     display: block;
     text-decoration: none;
     width: 100%;
     border: 1px solid;
 }
         
-    .blogPost{
+    .blogPostFront{
         margin-top: 10%;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: #282828;
+        color: white;
+    }
+    
+    .blogPost{
+        width: 75%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    /*Ändrar färgen för mobila enheter, mest för sena kvällar då det är skonsammare för ögonen med mattare färger.*/
+    body{
+        background-color: #1f1f1f;
+    }
+    /*Skiftar färger*/
+    .ContentDiv{
+        background-color: #282828;
+        color: white
     }
     
 }
 
-@media only screen and (max-width: 740){
+@media only screen and (max-width: 740px){
     
-    h2#frontHeading{
+    h2{
         font-size: 36px;
-        
+    }
+    
+}
+
+/*Media Queries för footern*/
+@media only screen and (max-width: 660px){
+    
+    .column{
+        width: 100%;
+        float: none;
+    }
+    
+    footer{
+        height: 275px;
     }
     
 }
