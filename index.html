@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<!----  Head  ---->
+<!--Head-->
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!----  Browser Icon  ---->
-        <link href="favicon.ico" rel="logo">
+<!--Browser Icon-->
+        <link href="favicon.ico" rel="icon">
 
-<!----  Stylesheets  ---->
+<!--Stylesheets-->
         <link rel="stylesheet" type="text/css" href="style/HTML5Reset.css">
         <link rel="stylesheet" type="text/css" href="style/style.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!----  Länkar iconerna till facebook och twitter  ---->
+<!--Länkar iconerna till facebook och twitter-->
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
         
-<!----  Titlen av nuvarande sida, ändras till Photos, About beroende på vilken sida  ---->
+<!-- Titlen av nuvarande sida, ändras till Photos, About beroende på vilken sida -->
         <title>AG Travels | Welcome</title>
     </head>
     
-<!----  BODY  ---->
+<!--BODY-->
     <body> 
-<!----  HEADER  ---->
+<!--HEADER-->
         <header>
 
             <h1 id="logo"><a href="index.html">AG Travel's</a></h1>
-<!----  NAV  ---->
+<!--NAV-->
                 <nav>
-                    <li class="current"><a href=index.html>Home</a></li>
-                    <li id="AboutLi"><a  href=about.html>About</a></li>
+                    <a class="current" href=index.html>Home</a>
+                    <a id="AboutLi" href=about.html>About</a>
                     
-<!--  Dropdown Meny. Se rad 286-312  -->
+                    
+<!--Dropdown Meny. Se rad 286-312-->
                     <div class="dropdown">
-                      <li><a href=blogPosts.html>Posts</a></li>
+                        <a class="dropbtn" href="blogPosts.html">Posts</a>
                         <div class="dropdownLinks">
+                            <a href="blogPosts.html">Posts</a>
                             <a href="#">All Posts</a>
                             <a href="#">Recent Posts</a>
                             <a href="#">Categories</a>
                         </div>
                     </div>
 
-<!--  Dropdown Meny. Se rad 286-312  -->
+<!--Dropdown Meny. Se rad 286-312-->
                     <div class="dropdown">
-                      <li><a href=photos.html>Photos</a></li>
+                        <a class="dropbtn" href="photos.html">Photos</a>
                         <div class="dropdownLinks">
+                            <a href="photos.html">Photos</a>
                             <a href="#">All Posts</a>
                             <a href="#">Recent Posts</a>
                             <a href="#">Categories</a>
@@ -52,24 +55,24 @@
                     </div>
                 </nav>
             
-<!--  Responsiv meny för skärmar mindre än 850px.(Har ej länkar)  -->
+<!--Responsiv meny för skärmar mindre än 850px.(Har ej länkar)-->
             <div id="menu">Menu</div>
         </header>
 
-<!--  Välkomst Bild  -->
-        <div background="pexels-photo-103567.jpeg" >
+<!--Välkomst Bild-->
+        <div>
             <img src="pexels-photo-103567.jpeg" alt="Road" id="FrontImg">
             <h2>Welcome To My Journey</h2>
         </div>
 
 
 
-<!----  BlogpostFront är alla bloginlägg på första sidan och alla blogposts på egen sida  ---->
+<!--BlogpostFront är alla bloginlägg på första sidan och alla blogposts på egen sida-->
         <div class="blogPostFront">
             <h3 class="heading">The Blue Lagoon Blogpost #43</h3>
-            <img src="LakeIsland.jpg" class="PostImage">  
+            <img src="LakeIsland.jpg" class="PostImage" alt="Blue Lagoon">  
             
-<!--  TextBox är texten på ett bloginlägg  -->
+<!--TextBox är texten på ett bloginlägg-->
             <div class="textBox">
                 <h3 class="S_textHeading">Lorem Ipsum</h3>
                 <p class="ContentText">
@@ -83,12 +86,12 @@
              </div>
         </div>
 
-<!--  BlogpostFront är alla bloginlägg på första sidan och alla blogposts på egen sida  -->
+<!--BlogpostFront är alla bloginlägg på första sidan och alla blogposts på egen sida-->
         <div class="blogPostFront">
             <h3 class="heading">The Blue Lagoon Blogpost #43</h3>
-            <img src="LakeIsland.jpg" class="PostImage">  
+            <img src="LakeIsland.jpg" class="PostImage" alt="Blue Lagoon">  
             
-<!--  TextBox är texten på ett bloginlägg  -->
+<!--TextBox är texten på ett bloginlägg-->
             <div class="textBox">
                 <h3 class="S_textHeading">Lorem Ipsum</h3>
                 <p class="ContentText">
@@ -97,16 +100,16 @@
             </div>
         </div>
 
-<!----  FOOTER  ---->
+<!--FOOTER-->
         <footer>
             <div class="column"> 
                 <a href="index.html">Home</a><br><a href="#">Posts</a><br><a href="#">Photos</a><br><a href="#">About</a>    
             </div>
                 <p class="column">Contact Us<br>AlexGrangren@example.com</p>
             <div class="column">
-                <i href="#" class="fa fa-facebook"></i>
-                <i href="#" class="fa fa-twitter"></i>
-                <i href="#" class="fa fa-instagram"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
             </div>
         </footer> 
 
